@@ -1,0 +1,2 @@
+I am not able to import the xml file as when I try to drag and drop the xml file, I am getting error that "XML file cannot be Imported". 
+I think this is becuase of .xml extension
