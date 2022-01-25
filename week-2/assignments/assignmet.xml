@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<<<<<<< HEAD
 <?xml-stylesheet type="text/css" href="style.css"?>
 <!DOCTYPE menuInfo
 [
@@ -16,6 +17,8 @@
   <!ELEMENT originalName (#PCDATA)>
   <!ELEMENT oldName (#PCDATA)>
 ]>
+=======
+>>>>>>> 0ac26bd13ad538629cbb77bfcab68e8597a65ec8
 <menuInfo>
   <title>Chester's Breakfast Menu</title>
   <summary>
@@ -25,7 +28,11 @@
     up just the way you like them!!
     ]]>
   </summary>
+<<<<<<< HEAD
   <effectiveDate>03/12/2016</effectiveDate>
+=======
+  <effective Date>03/12/2016</effective Date>
+>>>>>>> 0ac26bd13ad538629cbb77bfcab68e8597a65ec8
   <menu>
     <category>Traditional Favorites</category>
     <menuItem>
@@ -42,6 +49,7 @@
         ]]>
       </description>
       <price>7.95</price>
+<<<<<<< HEAD
       <indicator>&#9829;</indicator>
       <indicator>&#9830;</indicator>  <!-- low-sodium -->
       <indicator>&#9824;</indicator>  <!-- vegan -->  
@@ -49,6 +57,9 @@
   </menu>
   <menu>
   <category>Traditional</category>
+=======
+    </menuItem>
+>>>>>>> 0ac26bd13ad538629cbb77bfcab68e8597a65ec8
     <menuItem>
       <itemName>
         <originalName> Fresh Mornin' Sampler </originalName>
@@ -72,7 +83,10 @@
     <menuItem>
       <itemName>
         <originalName> Oatmeal Breakfast </originalName>
+<<<<<<< HEAD
         <oldName> Mornin' Sampler </oldName>
+=======
+>>>>>>> 0ac26bd13ad538629cbb77bfcab68e8597a65ec8
       </itemName>
       <description>
         <![CDATA[
@@ -87,9 +101,12 @@
       <indicator>&#9830;</indicator>  <!-- low-sodium -->
       <indicator>&#9824;</indicator>  <!-- vegan -->  
     </menuItem>
+<<<<<<< HEAD
   </menu>
   <menu>
   <category>Lite</category>
+=======
+>>>>>>> 0ac26bd13ad538629cbb77bfcab68e8597a65ec8
     <menuItem>
       <itemName>
         <originalName> Chester's Meat Platter </originalName>
@@ -103,6 +120,7 @@
         ]]>
       </description>
       <price>12.95</price>
+<<<<<<< HEAD
       <indicator>&#9832;</indicator> <!-- Low-carb -->
       <indicator>&#9830;</indicator>  <!-- low-sodium -->
       <indicator>&#9824;</indicator>  <!-- vegan -->  
@@ -114,3 +132,9 @@
   Name: Vidhi Bhagyesh Patel
   Student ID: N01426021
 -->
+=======
+      <indicator>&#9832;</indicator>  <!-- Low-carb -->
+    </menuItem>
+  </menu>
+</menuInfo>
+>>>>>>> 0ac26bd13ad538629cbb77bfcab68e8597a65ec8
