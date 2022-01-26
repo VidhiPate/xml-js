@@ -1,0 +1,3 @@
+2 --- ![image info](Assignment(SS-2).jpg)
+3 --- ![image info](Assignment(SS-3).jpg)
+4 --- DTD (Document Type Definition) is used to define a document type and not set of rules. One drawback of DTD is that it doesn't supports datatypes and namespace. DTD also provides less control on a XML file and it is complex. On the Other hand, XSD (XML Schema Definition) is very easy to learn as we don't need to know new languages for XSD. As compared to DTD, XSD also provied more control on the XML file. To express set of rules we have used XSD. So according to my practice XSD is more preferable compared to DTD.
