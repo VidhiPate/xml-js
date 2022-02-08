@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+		<script language="JavaScript">
+			function logResults(event) {
+				event.preventDefault();
+				const form = event.target;
+				const details = form.details.value;
+				const type = form.type.value;
+				const inputElements = form.food;
+				let favouriteFood = "";
+				for (let i = 0; inputElements[i]; ++i) {
+					if (inputElements[i].checked) {
+						favouriteFood += inputElements[i].value + " ";
+					}
+				}
+				console.log(`Personal Details: ${details}`);
+				console.log(`Food Type: ${type}`);
+				console.log(`Favourite Food: ${food}`);
+			}
+		</script>
+	</head>
+	<body>
+		<form onSubmit="logResults(event)" action="" method="get">
+            <p>Personal Details</p>
+			<label for="details">First Name: </label>
+			<input type="text" name="details" value="" /><br /><br />
+            <label for="details">Middle Name: </label>
+			<input type="text" name="details" value="" /><br /><br />
+            <label for="details">Last Name: </label>
+			<input type="text" name="details" value="" /><br /><br />
+			<p>Food Type</p>
+			<input type="radio" name="type" id="Vegetarian" value="vegetarian" />
+			<label for="vegetarian">Vegetarian</label>
+			<input type="radio" name="type" id="Non-Vegetarian" value="non-vegetarian" />
+			<label for="non-vegetarian">Non-Vegetarian</label>
+			<input type="radio" name="type" id="both" value="both" />
+			<label for="both">Both</label><br />
+			<p>Favourite Food</p>
+			<input type="checkbox" name="food" id="Pizza" value="Pizza" />
+			<label for="Pizza">Pizza</label>
+			<input type="checkbox" name="food" id="Punjabi" value="Punjabi" />
+			<label for="Punjabi">Punjabi</label>
+			<input type="checkbox" name="food" id="Pasta" value="Pasta" />
+			<label for="Pasta">Pasta</label>
+			<input type="checkbox" name="food" id="Chocolate" value="Chocolate" />
+			<label for="Chocolate">Chocolate</label><br />
+			<br />
+			<button type="submit">Submit</button>
+		</form>
+	</body>
+</html>

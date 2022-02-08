@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE main [
+    <!ELEMENT main (main+)>
+    <!ELEMENT main (mainName, Sizes, prices)>
+    <!ATTLIST main id ID #REQUIRED>
+    <!ELEMENT mainName (#PCDATA)>
+    <!ELEMENT Sizes (size+)>
+    <!ATTLIST size description CDATA #REQUIRED>
+    <!ELEMENT size (#PCDATA)>
+    <!ELEMENT prices (price+)>
+    <!ATTLIST price currency CDATA #REQUIRED>
+    <!ELEMENT price (#PCDATA)>
+]>
