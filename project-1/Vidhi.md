@@ -1,0 +1,2 @@
+-- For the xml file, I created an XSD. For the employee.xml file, I created an XSD schema. All of the attributes were added using the xs:attribute tag, and the primary tag names were added using the xs:elementtag tag
+-- Data for the xml file was included, as well as essential tags and attributes, For each tag having an attribute, I created a complexType and named it appropriately. Dummy data was created to be filtered while querying.
