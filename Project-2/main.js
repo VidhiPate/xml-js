@@ -32,9 +32,7 @@ getAllStudents().then(({ data }) => renderTable(data));
 const onSubmit = (event) => {
   event.preventDefault();
   const term = event.target.filters.value;
- // const cars_brand = event.target.cars_brand.value;
   const valueTerm = event.target.input.value;
-  // const selling = event.target.selling.value;
   
   if(term === `id`) {
     getStudentById(valueTerm).then(({ data }) => renderTable(data));

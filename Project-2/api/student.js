@@ -43,7 +43,7 @@ const getStudentById = (id) =>
     } else {
         resolve({
             code: 404,
-            data: { message: `No car found for id ${id}` },
+            data: { message: `No data found for id ${id}` },
         });
     }
   });
