@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project-2</title>
+        <style>
+            input, select, label, fieldset {
+                margin: 10px;
+            }
+            fieldset {
+                max-width: fit-content;
+            }
+
+            table, td{
+                border: 2px solid;
+                border-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Student Information</h1>
+        <form id="myForm" >
+            Find: <input type="text" name="input" id="input-value-term" placeholder="Enter the value"/>
+            <select name="filters" id="filter">
+                <option value="none">None</option>
+                <option value="id">Id</option>
+                <option value="first_name">First Name</option>
+                <option value="last_name">Last Name</option>
+                <option value="email">Email</option>
+                <option value="gender">Gender</option>
+                <option value="birth_date">Birth Date</option>
+                <option value="language">Language</option>
+            </select>
+
+           <fieldset>                
+                <legend>Gender</legend>
+                <input type="radio" name="gender" value="female"/>
+                <label for="female">Female</label>                            
+                <input type="radio" name="gender" value="male"/>
+                <label for="male">Male</label>                                
+                <input type="radio" name="gender" value="non-binary"/>
+                <label for="non-binary">Non Binary</label>       
+            </fieldset> 
+
+            <label>Select Language</label>
+            <select name="language" id="lanugae">
+                <option value="All">All</option>
+                <option value="German">German</option>
+                <option value="Italian">Italian</option>
+                <option value="Korean">Korean</option>
+                <option value="Dzongkha">Dzongkha</option>
+                <option value="Belarusian">Belarusian</option>
+                <option value="Romanian">Romanian</option>
+                <option value="Czech">Czech</option>
+                <option value="Swahili">Swahili</option>
+                <option value="Lithuanian">Lithuanian</option>
+                <option value="Marathi">Marathi</option>
+                <option value="Macedonian">Macedonian</option>
+                <option value="Kazakh">Kazakh</option>
+                <option value="Lao">Lao</option>
+                <option value="New Zealand Sign Language">New Zealand Sign Language</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Hungarian">Hungarian</option>
+                <option value="Papiamento">Papiamento</option>
+                <option value="Estonian">Estonian</option>
+                <option value="Dari">Dari</option>
+                <option value="Fijian">Fijian</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Tsonga">Tsonga</option>
+                <option value="Swati">Swati</option>
+                <option value="Finnish">Finnish</option>
+                <option value="Irish Gaelic">Irish Gaelic</option>
+                <option value="Maltese">Maltese</option>
+                <option value="Tetum">Tetum</option>
+                <option value="Azeri">Azeri</option>
+                <option value="Amharic">Amharic</option>
+                <option value="Tok Pisin">Tok Pisin</option>
+                
+            </select>
+            <br/>
+            <input type="submit" value="Filter"/>
+            <input type="reset" value="Reset"/>
+        </form>
+        <table>
+            <thead>
+              <th>Id</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Gender</th>
+              <th>Birth Date</th>
+              <th>Language</th>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+          <script type="text/javascript" src="./stu.js"></script>
+    </body>
+</html>
