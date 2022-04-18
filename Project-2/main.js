@@ -46,5 +46,9 @@ const onReset = () => {
   getAllStudents().then(({ data }) => renderTable(data));
 };
 
+const form = document.getElementById(`myForm`);
+
+form.onSubmit = onSubmit;
+
 document.getElementById("myForm").addEventListener("submit", onSubmit);
 document.getElementById("myForm").addEventListener("reset", onReset);
